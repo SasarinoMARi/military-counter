@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'roka';
+    src:url('roka.woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#blur-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+#countdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.countdown-text {
+    color: white;
+    display: block;
+    font-family: 'roka';
+}
+
+#countdown-date {
+    font-size: 20vh;
+}
+#countdown-time {
+    font-size: 6vh;
+}
