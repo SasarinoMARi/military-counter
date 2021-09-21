@@ -1,4 +1,4 @@
-var dday = Date.parse("2021-10-24 06:30")
+var dday = Date.parse("2021-10-22 06:30")
 function countdown() {
     var now = new Date();
         var distance = dday - now;
