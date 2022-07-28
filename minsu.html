@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<html>
+
+<head>
+    <script src="background.js"></script>
+    <script src="countdown-minsu.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+        function onLoad() {
+            switchBG();
+            countdown();
+        }
+    </script>
+</head>
+
+<body onload="onLoad();">
+    <div id="blur-background" class="background"></div>
+    <div id="background" class="background"></div>
+    <div id="countdown" class="countdown-text">
+        <div id="description" style="font-size: 7vh; margin-bottom: 5vh;">정민수, 전역까지 아직도!!</div>
+        <div id="countdown-date"></div>
+        <div id="countdown-time"></div>
+    </div>
+</body>
+
+</html>
